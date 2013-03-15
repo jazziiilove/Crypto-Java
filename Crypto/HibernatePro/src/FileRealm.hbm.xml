@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hiberante/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<!-- Fully qualified name -->
+	<class name="com.baran.hibernate.FileRealm" table="descontent">
+		<meta attribute="class-description">
+			This class contains FileRealm details.
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="inputFileName" column="input_file_name" type="string" />
+		<property name="inputFilePath" column="input_file_path" type="string" />
+		<property name="outputFileName" column="output_file_name"
+			type="string" />
+		<property name="outputFilePath" column="output_file_path"
+			type="string" />
+		<property name="hashInput" column="hash_input" type="string" />
+		<property name="hashOutput" column="hash_output" type="string" />
+		<property name="trivia" column="trivia" type="string" />
+	</class>
+</hibernate-mapping> 
